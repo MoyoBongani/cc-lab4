@@ -1,0 +1,19 @@
+{
+    "properties": {
+    "enableAcceleratedNetworking": true,
+    "ipConfigurations": [
+    {
+    "name": "ipconfig1",
+    "properties": {
+    "publicIPAddress": {
+    "id": "/subscriptions/9a30b169-411a-4c78-ade1-a2c3b347fcd5/resourceGroups/bongani/providers/Microsoft.Network/publicIPAddresses/bongani_test-ip"
+    },
+    "subnet": {
+    "id": "/subscriptions/9a30b169-411a-4c78-ade1-a2c3b347fcd5/resourceGroups/bongani/providers/Microsoft.Network/virtualNetworks/bongani-vnet/subnets/default"
+    }
+    }
+    }
+    ]
+    },
+    "location": "westeurope"
+    }

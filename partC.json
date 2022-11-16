@@ -1,0 +1,49 @@
+{
+    "id": "/subscriptions/9a30b169-411a-4c78-ade1-a2c3b347fcd5/resourceGroups/bongani/providers/Microsoft.Compute/virtualMachines/BonganiVM",
+    "type": "Microsoft.Compute/virtualMachines",
+    "properties": {
+    "osProfile": {
+    "adminUsername": "c20309081",
+    "secrets": [
+    ],
+    "computerName": "BonganiVM",
+    "linuxConfiguration": {
+    "ssh": {
+    "publicKeys": [
+    {
+    "path": "/home/c20309081/.ssh/authorized_keys",
+    "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCz41nGWDJuMQ0Ig6DEgkxhJWTq2zkYpE6dCULVbJoP5m+jSrxNKFb6FUsl4frzMEvH8GHhmzfsKMnCC7ezmCvjBuFXXEm5fQGvZVM4ZXkhUxWxUtwygIx0D2x49EI3S4PHYm9sCisdgSq/GJ5sHMZbXeZvxXYAPjj+mOzMop1hSJjYdD52/ufyDq+rGJWBpRomZjZlphNn+0jbJibqdC1tbiYGxlxUptDz855sqSuq/i6fHMirHZo4BtoWE3/BPsCW0hwlTbebNARNnaLQuFHEIqK6tH+Iwi+KeNcKz8iFV0kl67ISrxJKPKJN7JjJVXq9pCVt2C+bJW8VvHG+ffkVUF8dE4nWbq2poFjMd763xlIbtRZikqEWF7/JnllI22PywFOq3hYH1thw4FLccR4ksgIQSl6Pl0rdx7KgVpR2ZgPioUVP9q6Qz95eDtpuGJDF+FKs/9H/8iDmaSpeSCR2URJI/RuxwObIket0OVTPSgiqyyxt4SQuXz+2B2iX7tE= c20309081@c20309081 "
+    }
+    ]
+    },
+    "disablePasswordAuthentication": true
+    }
+    },
+    "networkProfile": {
+    "networkInterfaces": [
+    {
+    "id": "/subscriptions/9a30b169-411a-4c78-ade1-a2c3b347fcd5/resourceGroups/bongani/providers/Microsoft.Network/networkInterfaces/bonagni_test-interface",
+    "properties": {
+    "primary": true
+    }
+    }
+    ]
+    },
+    "storageProfile": {
+    "imageReference": {
+    "sku": "16.04-LTS",
+    "publisher": "Canonical",
+    "version": "latest",
+    "offer": "UbuntuServer"
+    },
+    "dataDisks": [
+    ]
+    },
+    "hardwareProfile": {
+    "vmSize": "Standard_D1_v2"
+    },
+    "provisioningState": "Creating"
+    },
+    "name": "bonganitestvm",
+    "location": "westeurope"
+    }
