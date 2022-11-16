@@ -3,7 +3,7 @@
     "type": "Microsoft.Compute/virtualMachines",
     "properties": {
     "osProfile": {
-    "adminUsername": "c20309081",
+    "adminUsername": "bongani",
     "secrets": [
     ],
     "computerName": "BonganiVM",
@@ -11,8 +11,8 @@
     "ssh": {
     "publicKeys": [
     {
-    "path": "/home/c20309081/.ssh/authorized_keys",
-    "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCz41nGWDJuMQ0Ig6DEgkxhJWTq2zkYpE6dCULVbJoP5m+jSrxNKFb6FUsl4frzMEvH8GHhmzfsKMnCC7ezmCvjBuFXXEm5fQGvZVM4ZXkhUxWxUtwygIx0D2x49EI3S4PHYm9sCisdgSq/GJ5sHMZbXeZvxXYAPjj+mOzMop1hSJjYdD52/ufyDq+rGJWBpRomZjZlphNn+0jbJibqdC1tbiYGxlxUptDz855sqSuq/i6fHMirHZo4BtoWE3/BPsCW0hwlTbebNARNnaLQuFHEIqK6tH+Iwi+KeNcKz8iFV0kl67ISrxJKPKJN7JjJVXq9pCVt2C+bJW8VvHG+ffkVUF8dE4nWbq2poFjMd763xlIbtRZikqEWF7/JnllI22PywFOq3hYH1thw4FLccR4ksgIQSl6Pl0rdx7KgVpR2ZgPioUVP9q6Qz95eDtpuGJDF+FKs/9H/8iDmaSpeSCR2URJI/RuxwObIket0OVTPSgiqyyxt4SQuXz+2B2iX7tE= c20309081@c20309081 "
+    "path": "/home/bongani/.ssh/authorized_keys",
+    "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCm0Plo+0JsUQ3n/yZvKg0VYdKsdtB/P5gNYKfjuMT2sEQFIk9i1kRrXfr03X9ziPy2YO1IoBDa4hZKY+qKxJvSl2MzZuFuszAsp4yZEMcKIZS5GuNxUqsbN9dZb/aTebqQ1j2D+AsLLCcsw569GyAqQVcgEcxbeFj7WrJp+NQFme28ZJdz+CjAba4gUWp58Wrk6m6sFNTipbg2yBUZIp53yjSemXP/yEtqTtcdZYR8pfm+lg4jaWDMr/+KiWFw46iwECvi8+QxSUgENaQVtnslWctTRIr8sNzHyQVf9UeEHlvJ6eEFn6wD41sZGhERmCFbALSBmHpsMgesgQr98ewh8roZ1KBk1J3ihDpaH96aMrD/rqN23cJYkqI2sHJHt9PXC+hgZW1yuFXMEH9b5T2ehxfAQtTKr35lDtUkLIG5tvZAVAokYgrzqzBQxVUPypNzLEJD5UQ1wBoE3siD+9m8bPtb3B0RmpZFVtZe1uPHKkGNWorWS8Q8DNnxCKQJgv0= 35389@DESKTOP-KGH1ERJ\n"
     }
     ]
     },
@@ -22,7 +22,7 @@
     "networkProfile": {
     "networkInterfaces": [
     {
-    "id": "/subscriptions/9a30b169-411a-4c78-ade1-a2c3b347fcd5/resourceGroups/bongani/providers/Microsoft.Network/networkInterfaces/bonagni_test-interface",
+    "id": "/subscriptions/9a30b169-411a-4c78-ade1-a2c3b347fcd5/resourceGroups/bongani/providers/Microsoft.Network/networkInterfaces/bonganivm175",
     "properties": {
     "primary": true
     }
@@ -31,19 +31,20 @@
     },
     "storageProfile": {
     "imageReference": {
-    "sku": "16.04-LTS",
-    "publisher": "Canonical",
-    "version": "latest",
-    "offer": "UbuntuServer"
+    "publisher": "canonical",
+                    "offer": "0001-com-ubuntu-server-focal",
+                    "sku": "20_04-lts-gen2",
+                    "version": "latest"
     },
     "dataDisks": [
     ]
     },
     "hardwareProfile": {
-    "vmSize": "Standard_D1_v2"
+    "vmSize": "Standard_B2s"
     },
     "provisioningState": "Creating"
     },
-    "name": "bonganitestvm",
+    "name": "BonganiVM",
     "location": "westeurope"
     }
+    
